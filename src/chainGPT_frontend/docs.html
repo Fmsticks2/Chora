@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - ChainGPT | Complete Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/docs.css">
+</head>
+<body class="dark-mode">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html" style="color: inherit; text-decoration: none;">ChainGPT</a></h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="chat-preview.html" class="nav-link">Chat Preview</a>
+                <a href="dashboard.html" class="nav-link">Dashboard</a>
+                <a href="docs.html" class="nav-link active">Docs</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="btn btn-primary">Launch App</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Documentation Container -->
+    <div class="docs-container">
+        <!-- Sidebar Navigation -->
+        <aside class="docs-sidebar">
+            <div class="sidebar-header">
+                <h3>📚 Documentation</h3>
+                <div class="search-box">
+                    <input type="text" placeholder="Search docs..." id="docs-search">
+                    <span class="search-icon">🔍</span>
+                </div>
+            </div>
+            
+            <nav class="docs-nav">
+                <div class="nav-section">
+                    <h4>Getting Started</h4>
+                    <a href="#introduction" class="nav-item active">Introduction</a>
+                    <a href="#quick-start" class="nav-item">Quick Start</a>
+                    <a href="#installation" class="nav-item">Installation</a>
+                </div>
+                
+                <div class="nav-section">
+                    <h4>Core Features</h4>
+                    <a href="#ai-chatbot" class="nav-item">AI Chatbot</a>
+                    <a href="#chain-fusion" class="nav-item">Chain Fusion</a>
+                    <a href="#trading" class="nav-item">Trading</a>
+                    <a href="#strategies" class="nav-item">Strategies</a>
+                </div>
+                
+                <div class="nav-section">
+                    <h4>Advanced</h4>
+                    <a href="#api-reference" class="nav-item">API Reference</a>
+                    <a href="#webhooks" class="nav-item">Webhooks</a>
+                    <a href="#security" class="nav-item">Security</a>
+                </div>
+                
+                <div class="nav-section">
+                    <h4>Resources</h4>
+                    <a href="#examples" class="nav-item">Examples</a>
+                    <a href="#faq" class="nav-item">FAQ</a>
+                    <a href="#support" class="nav-item">Support</a>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="docs-main">
+            <!-- Introduction Section -->
+            <section class="docs-section active" id="introduction">
+                <div class="section-header">
+                    <h1>🚀 Welcome to ChainGPT</h1>
+                    <p class="section-subtitle">Your AI-powered gateway to the future of decentralized trading</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>What is ChainGPT?</h2>
+                    <p>ChainGPT is a revolutionary AI-powered trading platform that combines the power of artificial intelligence with blockchain technology. Built on the Internet Computer Protocol (ICP), our platform offers seamless cross-chain trading, intelligent market analysis, and automated strategy execution.</p>
+                    
+                    <div class="feature-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">🤖</div>
+                            <h3>AI-Powered Trading</h3>
+                            <p>Natural language interface for executing trades and managing portfolios</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🔗</div>
+                            <h3>Chain Fusion Technology</h3>
+                            <p>Seamless cross-chain operations powered by ICP's advanced infrastructure</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📊</div>
+                            <h3>Smart Analytics</h3>
+                            <p>Real-time market insights and predictive analysis for informed decisions</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">⚡</div>
+                            <h3>Automated Strategies</h3>
+                            <p>Set-and-forget trading strategies with intelligent risk management</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>Key Benefits</h2>
+                    <ul class="benefits-list">
+                        <li><strong>Simplified Trading:</strong> Execute complex trades using natural language commands</li>
+                        <li><strong>Cross-Chain Access:</strong> Trade across multiple blockchains from a single interface</li>
+                        <li><strong>AI-Driven Insights:</strong> Get real-time market analysis and trading recommendations</li>
+                        <li><strong>Automated Execution:</strong> Set up strategies that trade automatically based on market conditions</li>
+                        <li><strong>Secure & Decentralized:</strong> Built on ICP for maximum security and decentralization</li>
+                    </ul>
+                </div>
+
+                <div class="content-block">
+                    <h2>Platform Architecture</h2>
+                    <div class="architecture-diagram">
+                        <div class="arch-layer">
+                            <h4>🎨 Frontend Layer</h4>
+                            <p>React-based user interface with real-time updates</p>
+                        </div>
+                        <div class="arch-arrow">↓</div>
+                        <div class="arch-layer">
+                            <h4>🤖 AI Processing Layer</h4>
+                            <p>Natural language processing and market analysis</p>
+                        </div>
+                        <div class="arch-arrow">↓</div>
+                        <div class="arch-layer">
+                            <h4>🔗 Chain Fusion Layer</h4>
+                            <p>Cross-chain communication and transaction routing</p>
+                        </div>
+                        <div class="arch-arrow">↓</div>
+                        <div class="arch-layer">
+                            <h4>⛓️ Blockchain Layer</h4>
+                            <p>ICP, Ethereum, Bitcoin, and other supported chains</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Start Section -->
+            <section class="docs-section" id="quick-start">
+                <div class="section-header">
+                    <h1>⚡ Quick Start Guide</h1>
+                    <p class="section-subtitle">Get up and running with ChainGPT in minutes</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>Step 1: Connect Your Wallet</h2>
+                    <div class="code-block">
+                        <div class="code-header">
+                            <span class="code-title">Wallet Connection</span>
+                            <button class="copy-btn">📋 Copy</button>
+                        </div>
+                        <pre><code>// Connect to Internet Identity
+const identity = await AuthClient.create();
+await identity.login({
+  identityProvider: "https://identity.ic0.app",
+  onSuccess: () => {
+    console.log("Connected to Internet Identity");
+  }
+});</code></pre>
+                    </div>
+                    <p>ChainGPT supports multiple wallet types including Internet Identity, MetaMask, and hardware wallets.</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>Step 2: Start Trading with AI</h2>
+                    <div class="chat-example">
+                        <div class="chat-message user">
+                            <div class="message-content">
+                                <p>"Buy $100 worth of Bitcoin when the price drops below $40,000"</p>
+                            </div>
+                        </div>
+                        <div class="chat-message bot">
+                            <div class="message-content">
+                                <p>I'll set up a limit order for you:</p>
+                                <div class="order-details">
+                                    <div class="detail-item">
+                                        <span class="label">Asset:</span>
+                                        <span class="value">Bitcoin (BTC)</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="label">Amount:</span>
+                                        <span class="value">$100 USD</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="label">Trigger Price:</span>
+                                        <span class="value">$40,000</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <span class="label">Order Type:</span>
+                                        <span class="value">Limit Buy</span>
+                                    </div>
+                                </div>
+                                <button class="confirm-btn">✅ Confirm Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>Step 3: Monitor Your Portfolio</h2>
+                    <p>Use the dashboard to track your investments, view AI insights, and manage your trading strategies.</p>
+                    <div class="dashboard-preview">
+                        <div class="preview-card">
+                            <h4>📊 Portfolio Value</h4>
+                            <div class="preview-value">$24,567.89</div>
+                            <div class="preview-change positive">+12.5% (24h)</div>
+                        </div>
+                        <div class="preview-card">
+                            <h4>🤖 Active Strategies</h4>
+                            <div class="preview-value">7</div>
+                            <div class="preview-change neutral">2 pending</div>
+                        </div>
+                        <div class="preview-card">
+                            <h4>🎯 AI Accuracy</h4>
+                            <div class="preview-value">87.3%</div>
+                            <div class="preview-change positive">+2.1%</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- AI Chatbot Section -->
+            <section class="docs-section" id="ai-chatbot">
+                <div class="section-header">
+                    <h1>🤖 AI Chatbot</h1>
+                    <p class="section-subtitle">Natural language trading interface</p>
+                </div>
+
+                <div class="content-block">
+                    <h2>Supported Commands</h2>
+                    <div class="command-grid">
+                        <div class="command-card">
+                            <h4>💰 Trading Commands</h4>
+                            <ul>
+                                <li>"Buy 0.1 BTC at market price"</li>
+                                <li>"Sell 50% of my ETH holdings"</li>
+                                <li>"Set stop loss at $35,000 for Bitcoin"</li>
+                                <li>"Create DCA strategy for $100 weekly"</li>
+                            </ul>
+                        </div>
+                        <div class="command-card">
+                            <h4>📊 Analysis Commands</h4>
+                            <ul>
+                                <li>"Show me Bitcoin price analysis"</li>
+                                <li>"What's the market sentiment for ETH?"</li>
+                                <li>"Analyze my portfolio performance"</li>
+                                <li>"Find arbitrage opportunities"</li>
+                            </ul>
+                        </div>
+                        <div class="command-card">
+                            <h4>⚙️ Management Commands</h4>
+                            <ul>
+                                <li>"Show my current positions"</li>
+                                <li>"Rebalance my portfolio"</li>
+                                <li>"Set risk limits to 5%"</li>
+                                <li>"Export trading history"</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>AI Capabilities</h2>
+                    <div class="capability-list">
+                        <div class="capability-item">
+                            <div class="capability-icon">🧠</div>
+                            <div class="capability-content">
+                                <h4>Natural Language Processing</h4>
+                                <p>Understands complex trading instructions in plain English</p>
+                            </div>
+                        </div>
+                        <div class="capability-item">
+                            <div class="capability-icon">📈</div>
+                            <div class="capability-content">
+                                <h4>Market Analysis</h4>
+                                <p>Real-time analysis of market trends and price movements</p>
+                            </div>
+                        </div>
+                        <div class="capability-item">
+                            <div class="capability-icon">🎯</div>
+                            <div class="capability-content">
+                                <h4>Risk Assessment</h4>
+                                <p>Intelligent risk evaluation for every trade recommendation</p>
+                            </div>
+                        </div>
+                        <div class="capability-item">
+                            <div class="capability-icon">🔮</div>
+                            <div class="capability-content">
+                                <h4>Predictive Insights</h4>
+                                <p>AI-powered predictions based on historical data and market patterns</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FAQ Section -->
+            <section class="docs-section" id="faq">
+                <div class="section-header">
+                    <h1>❓ Frequently Asked Questions</h1>
+                    <p class="section-subtitle">Common questions and answers</p>
+                </div>
+
+                <div class="content-block">
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>Is ChainGPT secure?</h4>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, ChainGPT is built on the Internet Computer Protocol (ICP), which provides enterprise-grade security. All transactions are cryptographically secured, and we never store your private keys. Your funds remain in your control at all times.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>Which blockchains are supported?</h4>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>ChainGPT currently supports Bitcoin, Ethereum, Internet Computer (ICP), and several other major blockchains. Our Chain Fusion technology enables seamless cross-chain operations without the need for bridges or wrapped tokens.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>How accurate is the AI?</h4>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Our AI maintains an average accuracy rate of 85-90% for market predictions. However, remember that all trading involves risk, and past performance doesn't guarantee future results. Always do your own research and never invest more than you can afford to lose.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>What are the fees?</h4>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>ChainGPT charges a competitive 0.25% trading fee on executed orders. There are no subscription fees for basic features. Premium features like advanced AI strategies may have additional costs, which will be clearly disclosed.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h4>Can I use ChainGPT on mobile?</h4>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes! ChainGPT is fully responsive and works great on mobile devices. We're also developing dedicated mobile apps for iOS and Android, which will be available soon.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Support Section -->
+            <section class="docs-section" id="support">
+                <div class="section-header">
+                    <h1>🆘 Support & Community</h1>
+                    <p class="section-subtitle">Get help when you need it</p>
+                </div>
+
+                <div class="content-block">
+                    <div class="support-grid">
+                        <div class="support-card">
+                            <div class="support-icon">💬</div>
+                            <h3>Community Discord</h3>
+                            <p>Join our active community for real-time support and trading discussions</p>
+                            <button class="btn btn-outline">Join Discord</button>
+                        </div>
+                        
+                        <div class="support-card">
+                            <div class="support-icon">📧</div>
+                            <h3>Email Support</h3>
+                            <p>Get personalized help from our support team within 24 hours</p>
+                            <button class="btn btn-outline">Contact Support</button>
+                        </div>
+                        
+                        <div class="support-card">
+                            <div class="support-icon">📚</div>
+                            <h3>Knowledge Base</h3>
+                            <p>Browse our comprehensive guides and tutorials</p>
+                            <button class="btn btn-outline">Browse Articles</button>
+                        </div>
+                        
+                        <div class="support-card">
+                            <div class="support-icon">🐛</div>
+                            <h3>Bug Reports</h3>
+                            <p>Report issues and help us improve the platform</p>
+                            <button class="btn btn-outline">Report Bug</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>📞 Emergency Contact</h2>
+                    <div class="emergency-info">
+                        <p><strong>For urgent issues affecting your funds or account security:</strong></p>
+                        <div class="contact-methods">
+                            <div class="contact-item">
+                                <span class="contact-label">Email:</span>
+                                <span class="contact-value">emergency@chaingpt.ai</span>
+                            </div>
+                            <div class="contact-item">
+                                <span class="contact-label">Response Time:</span>
+                                <span class="contact-value">Within 2 hours</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ChainGPT</h3>
+                <p>The future of AI-powered trading on the blockchain.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">🐦</a>
+                    <a href="#" class="social-link">💬</a>
+                    <a href="#" class="social-link">📱</a>
+                    <a href="#" class="social-link">🔗</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Product</h4>
+                <a href="features.html">Features</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="chat-preview.html">AI Chat</a>
+                <a href="#">API</a>
+            </div>
+            <div class="footer-section">
+                <h4>Resources</h4>
+                <a href="docs.html">Documentation</a>
+                <a href="#">Blog</a>
+                <a href="#">Community</a>
+                <a href="#">Support</a>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <a href="about.html">About</a>
+                <a href="#">Careers</a>
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ChainGPT. All rights reserved. Built on Internet Computer Protocol.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/docs.js"></script>
+</body>
+</html>
