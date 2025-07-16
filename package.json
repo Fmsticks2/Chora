@@ -1,5 +1,5 @@
 {
-    "name": "chainGPT",
+    "name": "choraAI",
     "type": "module",
     "scripts": {
         "start": "npm start --workspaces --if-present",

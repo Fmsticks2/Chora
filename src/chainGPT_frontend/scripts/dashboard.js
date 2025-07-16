@@ -265,21 +265,21 @@ class Dashboard {
         if (insightsList && this.currentSection === 'overview') {
             const insights = [
                 {
-                    icon: '📈',
+                    icon: '<svg class="icon"><use href="../assets/icons.svg#trending-up-icon"></use></svg>',
                     type: 'bullish',
                     title: 'Market Opportunity',
                     content: 'Strong buying pressure detected in DeFi tokens. Consider diversification.',
                     time: 'Just now'
                 },
                 {
-                    icon: '⚡',
+                    icon: '<svg class="icon"><use href="../assets/icons.svg#lightning-icon"></use></svg>',
                     type: 'info',
                     title: 'Quick Update',
                     content: 'ICP network upgrade completed successfully. Enhanced performance expected.',
                     time: 'Just now'
                 },
                 {
-                    icon: '🎯',
+                    icon: '<svg class="icon"><use href="../assets/icons.svg#target-icon"></use></svg>',
                     type: 'warning',
                     title: 'Target Reached',
                     content: 'BTC position has reached 90% of target profit. Consider taking profits.',

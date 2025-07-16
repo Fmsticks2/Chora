@@ -22,10 +22,10 @@ class ThemeManager {
   setTheme(theme) {
     if (theme === 'light') {
       this.body.classList.add('light-mode');
-      this.themeIcon.textContent = '☀️';
+      this.themeIcon.innerHTML = '<svg class="icon"><use href="../assets/icons.svg#sun-icon"></use></svg>';
     } else {
       this.body.classList.remove('light-mode');
-      this.themeIcon.textContent = '🌙';
+      this.themeIcon.innerHTML = '<svg class="icon"><use href="../assets/icons.svg#moon-icon"></use></svg>';
     }
     localStorage.setItem('theme', theme);
   }

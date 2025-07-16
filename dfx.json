@@ -1,15 +1,15 @@
 {
   "canisters": {
-    "chainGPT_backend": {
-      "main": "src/chainGPT_backend/main.mo",
+    "choraAI_backend": {
+      "main": "src/choraAI_backend/main.mo",
       "type": "motoko"
     },
-    "chainGPT_frontend": {
+    "choraAI_frontend": {
       "dependencies": [
-        "chainGPT_backend"
+        "choraAI_backend"
       ],
       "source": [
-        "src/chainGPT_frontend/assets"
+        "src/choraAI_frontend/assets"
       ],
       "type": "assets"
     },

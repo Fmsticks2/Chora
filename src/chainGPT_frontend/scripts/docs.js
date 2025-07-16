@@ -254,7 +254,7 @@ class DocsManager {
                 if (code) {
                     navigator.clipboard.writeText(code.textContent).then(() => {
                         const originalText = btn.textContent;
-                        btn.textContent = '✅ Copied!';
+                        btn.innerHTML = '<svg class="icon"><use href="assets/icons.svg#check-icon"></use></svg> Copied!';
                         btn.style.color = 'var(--success-color)';
                         
                         setTimeout(() => {
@@ -262,11 +262,11 @@ class DocsManager {
                             btn.style.color = '';
                         }, 2000);
                     }).catch(() => {
-                        btn.textContent = '❌ Failed';
+                        btn.innerHTML = '<svg class="icon"><use href="assets/icons.svg#warning-icon"></use></svg> Failed';
                         btn.style.color = 'var(--error-color)';
                         
                         setTimeout(() => {
-                            btn.textContent = '📋 Copy';
+                            btn.innerHTML = '<svg class="icon"><use href="assets/icons.svg#copy-icon"></use></svg> Copy';
                             btn.style.color = '';
                         }, 2000);
                     });
