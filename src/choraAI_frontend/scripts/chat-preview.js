@@ -316,7 +316,7 @@ const additionalCSS = `
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.1), transparent);
+    background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.1), transparent);
     transition: left 0.6s ease;
 }
 
@@ -336,7 +336,7 @@ const additionalCSS = `
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(45deg, var(--accent-color), var(--secondary-color), var(--accent-color));
+    background: linear-gradient(45deg, #3b82f6, #1e40af, #3b82f6);
     background-size: 200% 200%;
     animation: borderGlow 3s ease-in-out infinite;
     border-radius: 22px;

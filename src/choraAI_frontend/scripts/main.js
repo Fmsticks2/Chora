@@ -205,7 +205,7 @@ class NewsletterForm {
       font-size: 0.875rem;
       text-align: center;
       ${type === 'success' 
-        ? 'background: rgba(0, 255, 163, 0.1); color: #00FFA3; border: 1px solid rgba(0, 255, 163, 0.3);'
+        ? 'background: rgba(59, 130, 246, 0.1); color: #3B82F6; border: 1px solid rgba(59, 130, 246, 0.3);'
         : 'background: rgba(255, 0, 0, 0.1); color: #ff6b6b; border: 1px solid rgba(255, 0, 0, 0.3);'
       }
     `;

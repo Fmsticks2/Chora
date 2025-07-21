@@ -3,10 +3,10 @@
   --bg-primary: #0d1117;
   --bg-secondary: #1a1e29;
   --bg-tertiary: #21262d;
-  --accent-blue: #00ffff;
-  --accent-violet: #9b59b6;
-  --accent-green: #00FFA3;
-  --accent-pink: #DC1FFF;
+  --accent-blue: #3b82f6;
+  --accent-violet: #1e40af;
+  --accent-green: #60a5fa;
+  --accent-pink: #2563eb;
   --text-primary: #f0f0f0;
   --text-secondary: #8b949e;
   --text-muted: #6e7681;
@@ -20,9 +20,9 @@
   --text-muted-light: #8c959f;
   
   /* Gradients */
-  --gradient-primary: linear-gradient(135deg, var(--accent-green) 0%, var(--accent-pink) 100%);
-  --gradient-secondary: linear-gradient(135deg, var(--accent-blue) 0%, var(--accent-violet) 100%);
-  --gradient-tertiary: linear-gradient(45deg, var(--accent-blue), var(--accent-green), var(--accent-pink));
+  --gradient-primary: linear-gradient(135deg, #1e3a8a, #1d4ed8, #2563eb, #3b82f6);
+  --gradient-secondary: linear-gradient(135deg, #1e40af, #2563eb, #3b82f6, #60a5fa);
+  --gradient-tertiary: linear-gradient(45deg, #0369a1, #0ea5e9, #38bdf8, #7dd3fc);
   
   /* Spacing */
   --spacing-xs: 0.5rem;
@@ -39,10 +39,10 @@
   --radius-xl: 1rem;
   
   /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 255, 255, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 255, 255, 0.1);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 255, 255, 0.1);
-  --shadow-glow: 0 0 20px rgba(0, 255, 255, 0.3);
+  --shadow-sm: 0 1px 2px 0 rgba(59, 130, 246, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(59, 130, 246, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(59, 130, 246, 0.1);
+  --shadow-glow: 0 0 20px rgba(59, 130, 246, 0.3);
   
   /* Transitions */
   --transition-fast: 0.15s ease;
@@ -181,10 +181,10 @@ a:hover {
 
 @keyframes glow {
   0%, 100% {
-    box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
   }
   50% {
-    box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.6);
   }
 }
 
@@ -301,11 +301,11 @@ a:hover {
 
 /* Selection Styling */
 ::selection {
-  background: rgba(0, 255, 255, 0.3);
+  background: rgba(59, 130, 246, 0.3);
   color: var(--text-primary);
 }
 
 ::-moz-selection {
-  background: rgba(0, 255, 255, 0.3);
+  background: rgba(59, 130, 246, 0.3);
   color: var(--text-primary);
 }
