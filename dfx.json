@@ -9,7 +9,7 @@
         "choraAI_backend"
       ],
       "source": [
-        "src/choraAI_frontend/assets"
+        "src/choraAI_frontend/out"
       ],
       "type": "assets"
     },
